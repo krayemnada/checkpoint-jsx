@@ -1,19 +1,19 @@
 
 import './App.css';
 import React from 'react';
-import {ReactVideo} from 'reactjs-media'
-import image from "./imageInSrc.jpg"
+import imageInSrc from "./imageInSrc.jpg";
+import './style.css';
 
 function App() {
   return (
     <div className="App">
         <div style={{border:'solid 1px black', maxWidth:'100vw'}} >
 
-              <h1 className="title red">Your name here</h1>
+              <h1 className="title red">Nada Kraiem</h1>
 
               < br /> 
 
-              <img src={imageInSrc} className="image-fleur"alt="imgsrc" width='300px' />
+              <img src={imageInSrc} className="image"alt="imgsrc" width='300px' />
 
               <br /> 
 
@@ -21,11 +21,11 @@ function App() {
 
         </div>
         <div>
-              <ReactVideo width="320" height="240" controls>
+              <video width="320" height="240" controls>
 
              <source src="/myVideo.mp4" type="video/mp4" />
 
-            </ReactVideo>
+            </video>
         </div>
     </div>
   );
